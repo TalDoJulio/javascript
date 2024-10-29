@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+</head>
+<body>
+    <h1>Curso JavaScript #6</h1>
+
+    <script>
+        var n1 = Number(prompt('Digite um numero: '))
+        var n2 = Number(prompt('Digite outro numero: '))
+        var s = n1 + n2
+        alert(`A soma de ${n1.toFixed(2).replace('.', ',')} + ${n2.toFixed(2).replace('.', ',')} = ${s.toFixed(3).replace('.', ',')}`)
+        // So funciona com o Number
+        // .toFixed(1, 2, 3, 4...) quantos numeros decimais ira aparecer
+        // .replace('.', ',') vai trocar o ponto flutuante por uma virgula
+        // .toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) - Converte o numero para 'moedas' ('USD', 'BRL', 'EUR', ...)
+    </script>
+</body>
+</html>
