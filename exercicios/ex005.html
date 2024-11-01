@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operadores 00</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ol > li {
+            margin: 0px 0px 0px 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Operadores (Parte 1) - Curso JavaScript #07</h1>
@@ -14,13 +22,35 @@
     <h3>-</h3>
     <h3>*</h3>
     <h3>/</h3>
-    <h3>%</h3>
+    <h3>%</h3><!--Usar a abreviação do html, quando passar o mause em cima aparecer 'Resto da divisao inteira'-->
+    <p>Resto da divisao inteira</p>
     <h3>**</h3>
+    <p>Potência</p>
+    <h4>Ordem de precedência dos operadores</h4>
+    <ol>
+        <li>()</li>
+        <li>**</li>
+        <li>* / %</li>
+        <li>+ -</li>
+    </ol>
 
     <h2>Atribuição</h2>
+    <h3>Atribuição Simples</h3>
+    <code>
+        <pre>
+            var a = 5 + 3
+            var b = a % 5
+            var c = 5 * b ** 2
+            var d = 10 - a / 2
+            var e = 6 * 2 / d
+            var f = b % e + 4 / e
+        </pre>
+    </code>
+
+
+
     <h2>Relacionais</h2>
     <h2>Lógicos</h2>
     <h2>Ternário</h2>
-    <p></p>
 </body>
 </html>
