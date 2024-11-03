@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores 02</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="https://www.youtube.com/watch?v=BP63NhITvao&t" target="_blank">Operadores (Parte 2) - Curso JavaScript #08</a></h1>
+    
+
+    <h2>Aritméticos</h2>
+    <p>Todos os operadores Aritméticos: </p>
+    <h3>+</h3>
+    <h3>-</h3>
+    <h3>*</h3>
+    <h3>/</h3>
+    <h3>%</h3><!--Usar a abreviação do html, quando passar o mause em cima aparecer 'Resto da divisao inteira'-->
+    <p>Resto da divisao inteira</p>
+    <h3>**</h3>
+    <p>Potência</p>
+    <h4>Ordem de precedência dos operadores</h4>
+    <ol>
+        <li>()</li>
+        <li>**</li>
+        <li>* / %</li>
+        <li>+ -</li>
+    </ol>
+
+
+    <h2>Atribuição</h2>
+    <h3>Atribuição Simples</h3>
+    <code>
+        <pre>
+            var a = 5 + 3
+            var b = a % 5
+            var c = 5 * b ** 2
+            var d = 10 - a / 2
+            var e = 6 * 2 / d
+            var f = b % e + 4 / e
+        </pre>
+    </code>
+
+
+    <h2>Relacionais</h2>
+    <ul>
+        <li>></li>
+        <li><</li>
+        <li>>=</li>
+        <li><=</li>
+        <li>==</li>
+        <li>!=</li>
+    </ul>
+    <h3>Identidade</h3>
+    <p>5 == 5 -> true</p>
+    <p>5 == '5' -> true</p>
+    <p>5 === '5' -> false / 5 === 5 -> true</p> <!--Tres sinais de igual que dizer 'identico', se o 5 é identico ao 5 que esta entre aspas-->
+    <p>Tambem temos o !== ( desigual / restrito ), eles sao de tipos diferentes mas o valor é o mesmo</p>
+
+
+    <h2>Lógicos</h2>
+    <h3>!</h3>
+    <p>A exclamação quer dizer negação</p>
+    <h3>&&</h3>
+    <p>Os 2 &E's comerciais, é uma conjunção</p>
+    <h3>||</h3>
+    <p>Os 2 paipes? é uma disjunção</p>
+    <h4>Ordem de Precedência</h4>
+    <ol>
+        <li>!</li>
+        <li>&&</li>
+        <li>||</li>
+    </ol>
+
+
+    <h2>Ternário</h2>
+    <ul>
+        <li>?</li>
+        <li>:</li>
+    </ul>
+
+    <script>
+        var idade = window.prompt('Qual sua idade?')
+        var r = idade >= 18 ? 'maior' : 'menor'
+        window.alert(`Sua idade é ${r} que 18, pode continuar acessando o site`)
+    </script>
+</body>
+</html>
