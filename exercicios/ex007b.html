@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao DOM</title>
     <style>
+        * {
+            margin: 0px;
+        }
         body {
             font-family: Arial, Helvetica, sans-serif;
             background-color: aquamarine;
+        }
+
+
+
+
+        footer {
+            background-color: white;
         }
     </style>
 </head>
@@ -37,27 +47,29 @@
 
         <h3>History</h3>
     </section>
+
     <section>
         <h1>Selecionando elementos</h1>
         <p>Podemos selecionar esses elementos para navegar dentro da arvore DOM</p>
         <p>Aqui vai 5 metodos de acesso</p>
         <ol>
-            <li>por Marca (tag)</li>
-            <li>por ID</li>
-            <li>por Nome</li>
-            <li>por Classe</li>
-            <li>por Seletor (CSS)</li>
+            <li>por <abbr title="getElementByTagName()">Marca</abbr> (tag)</li>
+            <li>por <abbr title="getElementById()">ID</abbr></li>
+            <li>por <abbr title="getElementsByName()[]">Nome</abbr></li>
+            <li>por <abbr title="getElementByClassName()">Classe</abbr></li>
+            <li>por <abbr title="querySelector() / querySelectorAll()">Seletor</abbr> (CSS)</li>
         </ol>
         <h2>Marca</h2>
         <p>getElementByTagName()</p>
     </section>
 
-    
+    <footer>
+        <h1>Aqui aprendemos a selecionar os elementos pela tag (<strong>marca</strong>)</h1>
+    </footer>
 
     <script>
         var corpo = window.document.body
         var p1 = window.document.getElementsByTagName('p')[1] //comeca a partir do 0
-        corpo.style.background = 'black'
         p1.style.color = 'white'
         //window.document.write(window.navigator.appName)
         window.document.write('Esta escrito assim: ' + p1.innerText) // podemos tambem usar o innerHTML, vai puxar o comando inteiro desejado
