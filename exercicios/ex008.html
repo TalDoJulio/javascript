@@ -18,8 +18,41 @@
 </head>
 <body>
     <h1>Eventos DOM - Curso JavaScript #10</h1>
-    <div id="area">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()"> <!--Jeito de usar as funções em HTML-->
         Interaja...
     </div>
+    <p>Eventos é tudo que pode acontecer com o elemento ( nesse caso essa DIV ), nessa aula falaremos sobre eventos de mouse.</p>
+    <p>mouseente = Vai disparar um evento quando o mouse entra dentro do elemento.</p>
+    <p>mousemove = Mover o mouse dentro do elemento.</p>
+    <p>mousedown = Esse evento ocorre quando deixa precionado o mouse dentro do elemento.</p>
+    <p>mouseup = Dispara quando o solta o botao do mouse</p>
+    <p>click = Quando clica com o mouse no elemento.</p>
+    <p>mouseout = Quando eu arrasto o mouse para fora do elemento.</p>
+    <p>Existem outros eventos que podem ser usados, basta acessar o site da <a href="https://developer.mozilla.org/en-US/docs/Web/Events">mozilla</a></p>
+
+    <h1>Funções</h1>
+    <p>Uma função em JavaScript, é um conjunto de codigos que vao ser executadas so quando o evento acontecer</p>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)  
+        a.addEventListener('mouseenter', entrar) //Jeito de usar as funções em JavaScript
+        a.addEventListener('mouseout', saiu)
+        function clicar() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            var ent = window.document.getElementById('area')
+            ent.innerText = 'Entrou!'
+            ent.style.background = 'green'
+        }
+        function saiu() {
+            var s = window.document.getElementById('area')
+            s.innerText = 'Saiu!'
+            s.style.background = 'yellow'
+        }
+    </script>
 </body>
 </html>
