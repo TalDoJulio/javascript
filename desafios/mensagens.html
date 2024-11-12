@@ -26,24 +26,35 @@
             font-size: 1.4em;
             width: 100px;
             height: 50px;
+            border: 1px solid black;
+            border-radius: 5px;
         }
         main > input.botao:hover {
-            background-color: lightgray;
+            background-color: gray;
+            color: white;
+            text-decoration: underline;
         }
+        
     </style>
 </head>
 <body>
     <main id="container">
         <h1>Desafio das Mensagens</h1>
-        <input type="button" value="Botão 1" class="botao" id="b1">
-        <input type="button" value="Botão 2" class="botao" id="b2">
-        <input type="button" value="Botão 3" class="botao" id="b3">
+        <input type="button" value="Botão 1" class="botao" id="b1" onclick="clicar()">
+        <input type="button" value="Botão 2" class="botao" id="b2" onclick="clicar()">
+        <input type="button" value="Botão 3" class="botao" id="b3" onclick="clicar()">
     </main>
     <script>
-        var botao1 = window.document.getElementById('b1')
+        
         var botao2 = window.document.getElementById('b2')
         var botao3 = window.document.getElementById('b3')
-        
+        botao1 = addEventListener('click', clicar)
+        botao2 = addEventListener('click', clicar)
+        botao3 = addEventListener('click', clicar)
+        function clicar() {
+            var botao1 = window.document.getElementById('b1')
+            window.alert('Voce clicou no 1° botão!')
+        }
     </script>
 </body>
 </html>
