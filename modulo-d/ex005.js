@@ -8,4 +8,4 @@ if (hora < 12) {
     console.log('Boa Tarde!')
 } else {
     console.log('Boa Noite!')
-} 
+}

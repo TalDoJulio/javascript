@@ -14,8 +14,10 @@
 <body>
     <h1 name="nome">Introdução ao DOM - Continuação</h1>
     <p>Aprendendo a usar o DOM em JavaScript</p>
+
     <div id="msg">CLIQUE AQUI!!!</div>
     <h1>Selecionando elementos - Continuação</h1>
+
     <h2>por <abbr title="getElementById">ID</abbr></h2>
     <h2>por <abbr title="getElementsByName">Nome</abbr></h2>
     <h2>por <abbr title="getElementByClassName()">Classe</abbr></h2>
@@ -26,7 +28,7 @@
         var seletor = window.document.querySelector('div#msg')
         nome.innerText = 'Teste de nome'
         d.style.background = 'white'
-        //window.document.getElementById('msg').innerText = 'Olá Mundo!'
+        window.document.getElementById('msg').innerText = 'Olá Mundo!'
         d.innerText = 'Estou aguardando...'
         
     </script>
