@@ -6,8 +6,9 @@
     <title>Introdução ao DOM</title>
     <style>
         body {
-            background-color: aqua;
+            background-color: black;
             font-family: Arial, Helvetica, sans-serif;
+            color: white;
         }
     </style>
 </head>
@@ -27,7 +28,7 @@
         var nome = window.document.getElementsByName('nome')[0]
         var seletor = window.document.querySelector('div#msg')
         nome.innerText = 'Teste de nome'
-        d.style.background = 'white'
+        d.style.background = 'cyan'
         window.document.getElementById('msg').innerText = 'Olá Mundo!'
         d.innerText = 'Estou aguardando...'
         
